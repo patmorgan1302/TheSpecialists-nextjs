@@ -3,9 +3,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 32rem;
-  /* background: linear-gradient(90deg, rgba(173,173,173,1) 84%, rgba(24,48,52,1) 100%, rgba(195,195,199,1) 100%); */
   width: '21rem';
 }
+
+.bigbutton_a{
+  font-family: Lucida Console, Monaco, monospace;
+  color: black;
+  font-size: 19px;
+  text-shadow: 2px 2px #cc6699;
+  border-color: #cc6699;
+  border-radius: 13px ;
+  border-width: 11px ;
+  border-style: double;
+  margin-right: 84rem;
+  margin-bottom: 22px;
+}
+
 .links{
   text-decoration-color: white;
   color: white
@@ -17,15 +30,13 @@
   margin-bottom: 45px;
   border: 8px solid  #cc6699
 }
-
-/* .borderline{
-  height: 125px;
-  border-top: 40px, solid #bbb;
-  border-radius: 125px;
-  margin-bottom: 156px;
-  margin-top: 195px;
-  border-color: #5F9EA0;
-} */
+.schedule{
+  font-family: Lucida Console, Monaco, monospace;
+  color: #cc6699;
+  text-shadow: 2px 2px black;
+  margin-bottom: 35px;
+  margin-top: 55px;
+}
 
 .container {
   background-image: url('../public/bernard-hermant-orgIwKaY-4Y-unsplash.jpg');
@@ -33,8 +44,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  /* background: rgb(135,142,157);
-  background: linear-gradient(90deg, rgba(135,142,157,1) 0%, rgba(195,195,199,1) 53%, rgba(18,135,158,1) 100%); */
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -42,7 +51,9 @@
   justify-content: center;
   align-items: center;
 }
-
+.narrative{
+  margin-bottom: 66px;
+}
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -50,7 +61,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+}
+
+.navbar{
+  height: 55px;
+  border: 3px solid #cc6699
 }
 
 .footer {
@@ -88,15 +103,61 @@
 }
 
 .title {
-  margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  margin-top: 156px;
-  font-size: 65px;
+  margin-bottom: 26px;
+  margin-top: 116px;
+  font-size: 110px;
+  text-shadow: 4px 4px teal;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #cc6699;
+}
+.title_e{
+  line-height: 1.15;
+  font-size: 4rem;
+  margin-bottom: 26px;
+  margin-top: 176px;
+  font-size: 80px;
+  text-shadow: 4px 4px teal ;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #cc6699;
+}
+
+.title_b{
+  margin: 0;
+  line-height: 1.15;
+  margin-top: 98px;
+  margin-bottom: 26px;  
+  font-size: 54px;
   text-shadow: 2px 2px black;
   font-family: "Lucida Console", Monaco, monospace;
   color: #cc6699;
+  background-color: teal;
+}
 
+.title_c{
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px pink;
+  font-size: 33px;
+  background-color: teal;
+  margin-bottom: 65px;
+}
+
+.title_d{
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px pink;
+  font-style: 44px;
+}
+
+.title_f{
+  line-height: 1.15;
+  font-size: 4rem;
+  margin-bottom: 26px;
+  margin-top: 116px;
+  font-size: 65px;
+  text-shadow: 3px 3px black ;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #cc6699;
 }
 
 .description {
@@ -115,8 +176,6 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  /* font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace; */
   font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -132,6 +191,7 @@
 .card {
   margin: 1rem;
   flex-basis: 45%;
+  text-shadow: 1px 1px teal;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -139,13 +199,16 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  font-family: "Lucida Console", Monaco, monospace;
+
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: black;
+  border-color: teal;
+  text-shadow: 2px 2px teal;
 }
 
 .card h3 {
